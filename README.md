@@ -1,2 +1,2 @@
-# MC-Avater
-PHPでMinecraftのユーザ名からアバターを取得するやつ
+# MC-Face
+PHPでMinecraftのユーザ名から顔アイコンを取得するやつ
