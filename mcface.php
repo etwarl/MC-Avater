@@ -33,11 +33,11 @@ if ($user!=''){
 $im = imagecreatefromstring($skin);
 $av = imagecreatetruecolor($size, $size);
 
-$x = array('f' => 8, 'l' => 16, 'r' => 0, 'b' => 24);
+$v = array('f' => 8, 'l' => 16, 'r' => 0, 'b' => 24);
 
-imagecopyresized($av, $im, 0, 0, $x[$view], 8, $size, $size, 8, 8);
+imagecopyresized($av, $im, 0, 0, $v[$view], 8, $size, $size, 8, 8);
 imagecolortransparent($im, imagecolorat($im, 63, 0));
-imagecopyresized($av, $im, 0, 0, $x[$view] + 32, 8, $size, $size, 8, 8);
+imagecopyresized($av, $im, 0, 0, $v[$view] + 32, 8, $size, $size, 8, 8);
 
 header('Content-type: image/png');
 imagepng($av);
